@@ -1,0 +1,27 @@
+.flexSection {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 1330px) {
+    .flexSection {
+        flex-direction: column-reverse;
+    }
+    .flexSection img {
+        width: 100%;
+        height: auto;
+    }
+    .dogRest {
+        width: -webkit-fill-available;
+    }
+    .otherClass {
+        flex-direction: column;
+    }
+}

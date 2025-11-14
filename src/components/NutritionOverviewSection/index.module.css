@@ -1,0 +1,56 @@
+.flexSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px
+}
+
+.flexVerticalSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.keypoints {
+    margin-bottom: 30px;
+}
+
+.indexedMetric {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.point {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+.point > div:first-child {
+    color: #EE6F4B;
+    font-weight: 700;
+    font-size: 33px;
+}
+
+.point:nth-child(2) {
+    border-top: 1px solid #E3E3E8;
+    border-bottom: 1px solid #E3E3E8;
+}
+
+.button {
+    width: 100%;
+}
+
+@media (max-width: 1330px) {
+    .flexSection {
+        flex-direction: column-reverse;
+    }
+    .flexSection img {
+        width: 100%;
+        height: auto;
+    }
+    .dogRest {
+        width: -webkit-fill-available;
+    }
+}
